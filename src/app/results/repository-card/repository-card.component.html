@@ -1,0 +1,18 @@
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>
+        <a [href]="repository.html_url"><h2>{{repository.name}}</h2></a>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="card-content">
+        <img [src]="repository.owner.avatar_url" alt="">
+        <ul>
+          <li>Author: <a [href]="repository.owner.html_url">{{repository.owner.login}}</a></li>
+          <li>Language: {{repository.language}}</li>
+          <li>Forks: {{repository.forks}}</li>
+          <li>Watchers: {{repository.watchers}}</li>
+        </ul>
+      </div>
+    </mat-card-content>
+  </mat-card>

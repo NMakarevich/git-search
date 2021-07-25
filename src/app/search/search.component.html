@@ -1,0 +1,9 @@
+<div class="container">
+  <mat-form-field>
+    <input #input matInput type="text" placeholder="Search Git Repository" (keydown.enter)="search()">
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="search()">Search</button>
+  <p>Search history: {{searchHistory.join(', ')}}</p>
+  <p>Find repositories: {{repositoriesCount}}</p>
+</div>
+
